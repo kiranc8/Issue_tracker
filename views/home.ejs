@@ -1,0 +1,28 @@
+<!-- list-projects.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="/css/home.css"/>
+</head>
+<body>
+  <nav>
+    <a href="project/create-project"><button>Create Project</button></a>
+  </nav>
+  <ul>
+    <% if (projects.length > 0) { %>
+      <% projects.forEach(function(project) { %>
+        <li>
+          <a href="/issue/<%= project._id %>"><%= project.name %></a>
+        </li>
+      <% }); %>
+    <% } else { %>
+      <div style="text-align: center;">
+        <p><%= message %></p>
+      </div>
+    <% } %>
+  </ul>
+</body>
+</html>

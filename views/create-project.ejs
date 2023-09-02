@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Project</title>
+  <link rel="stylesheet" href="/css/create-project.css">
+</head>
+<body>
+  <h1>Create a New Project</h1>
+  <form method="POST" action="/project/create">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required><br>
+    <label for="description">Description:</label>
+    <textarea name="description" required></textarea><br>
+    <label for="author">Author:</label>
+    <input type="text" name="author" required><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
