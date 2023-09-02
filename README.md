@@ -1,6 +1,6 @@
 # Project Name
 
-Jira-Style Issue Tracker
+Issue Tracker
 
 ## DEMO
 https://issue-tracker-hijt.onrender.com/
